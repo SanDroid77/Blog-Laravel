@@ -40,11 +40,6 @@ CREATE TABLE IF NOT EXISTS `articles` (
 --
 -- Volcado de datos para la tabla `articles`
 --
-
-INSERT INTO `articles` (`id`, `title`, `content`, `user_id`, `category_id`, `created_at`, `updated_at`, `slug`) VALUES
-(2, 'Noticia de ultima hora', 'Contenido de la noticia', 1, 1, '2015-10-20 17:16:42', '2015-10-20 17:16:42', NULL),
-(3, 'CodigoFacilito tendra una nueva plataforma', 'Este es el contenido', 1, 1, '2015-10-30 05:15:57', '2015-10-30 05:15:57', 'codigofacilito-tendra-una-nueva-plataforma');
-
 -- --------------------------------------------------------
 
 --
@@ -62,10 +57,6 @@ CREATE TABLE IF NOT EXISTS `article_tag` (
 --
 -- Volcado de datos para la tabla `article_tag`
 --
-
-INSERT INTO `article_tag` (`id`, `article_id`, `tag_id`, `created_at`, `updated_at`) VALUES
-(1, 2, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-
 -- --------------------------------------------------------
 
 --
@@ -82,13 +73,6 @@ CREATE TABLE IF NOT EXISTS `categories` (
 --
 -- Volcado de datos para la tabla `categories`
 --
-
-INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Noticias', '2015-10-20 17:09:30', '2015-10-20 17:09:30'),
-(2, 'PHP', '2015-11-05 07:04:03', '2015-11-05 07:04:03'),
-(3, 'Python', '2015-11-05 07:04:58', '2015-11-05 07:04:58'),
-(4, 'Java', '2015-11-05 07:09:47', '2015-11-05 07:09:47');
-
 -- --------------------------------------------------------
 
 --
@@ -155,10 +139,6 @@ CREATE TABLE IF NOT EXISTS `tags` (
 --
 -- Volcado de datos para la tabla `tags`
 --
-
-INSERT INTO `tags` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Sucesos', '2015-10-20 17:17:21', '2015-10-20 17:17:21');
-
 -- --------------------------------------------------------
 
 --
@@ -179,16 +159,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 -- Volcado de datos para la tabla `users`
 --
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `type`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Sandro Svragulia', 'sandrosvragulia@gmail.com', '$2y$10$UgeBaSXpb2AUipzroWbnwu8Qpb0O5HH6neqYOe/jMv5aE6E9TobSK', 'admin', NULL, '2015-10-20 06:46:11', '2015-11-05 06:01:34'),
-(3, 'Sandro Svragulia', 'sandro_cba_ra@hotmail.com', '$2y$10$DEExLz8QSp57tCnPoVwpnePhboSiuExlAPtISOPVmLvwfW.9ZcSS.', 'member', NULL, '2015-10-31 07:53:21', '2015-11-05 06:02:03'),
-(8, 'Bella Román', 'bella.roman.396@facebook.com', '$2y$10$uZfwE4L/5vgtVQbTYZwQFuCja5/TYCXLcUKbuivY13u95MzwPYi5K', 'member', NULL, '2015-11-02 08:22:45', '2015-11-02 08:22:45'),
-(9, 'Claudia Páez', 'clau_cleo@hotmail.com', '$2y$10$GAK5WKPsQzwsyo3vHYOwg.DedskeTGvrd1iYr1gnYncG4.Ukkv5q6', 'member', NULL, '2015-11-02 08:23:10', '2015-11-05 06:04:40'),
-(10, 'Celeste Páez', 'celes87_cba@hotmail.com.ar', 'celeste', 'member', NULL, '2015-11-02 08:23:36', '2015-11-05 06:31:00'),
-(11, 'Gabriela Ordóñez', 'gabykids1@gmail.com', '$2y$10$qtljpPM2tvep9UA4AM1TYOneFLt3Yv3c87/iNpCM1xEl1M4h5Iodm', 'member', NULL, '2015-11-02 08:25:39', '2015-11-02 08:25:39'),
-(12, 'Uriel Hernandez', 'uriel@codigofacilito.com', '$2y$10$sp4z18d2EaCEVE1Le..Th.pm7F6T.98iZW2/tN2KeUf6TwVFhpAWa', 'admin', NULL, '2015-11-05 06:27:37', '2015-11-05 06:27:37');
-
 --
 -- Índices para tablas volcadas
 --
