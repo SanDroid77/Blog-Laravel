@@ -1,0 +1,17 @@
+.admin-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.navbar-brand img {
+	margin-top: -10px;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+body {
+	background-image: url('../images/patterns/old_moon.png');
+	background-repeat: repeat;
+}
