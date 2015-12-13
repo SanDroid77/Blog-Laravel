@@ -2,3 +2,8 @@ img.img-article {
 	width: 320px;
 	height: 320px;
 }
+
+body {
+	background-image: url('../images/patterns/old_moon.png');
+	background-repeat: repeat;
+}

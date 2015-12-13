@@ -58,6 +58,24 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="col-md-4 aside">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h3 class="panel-title">Tags</h3>
+				</div>
+				<div class="panel-body">
+					<span class="label label-default">Symfony</span>
+					<span class="label label-default">CodeIgniter</span>
+					<span class="label label-default">Rails</span>
+					<span class="label label-default">Laravel</span>
+					<span class="label label-default">PHP</span>
+					<span class="label label-default">CodigoFacilito</span>
+					<span class="label label-default">Default</span>
+					<span class="label label-default">Default</span>
+				</div>
+			</div>
+		</div>
 	</div>
 
 @endsection

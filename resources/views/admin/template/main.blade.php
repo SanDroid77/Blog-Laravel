@@ -5,6 +5,7 @@
     <title>@yield('title', 'Default') | Panel de administración</title>
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/themes/Flaty/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/chosen/chosen.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/trumbowyg/ui/trumbowyg.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/fileinput/css/fileinput.css') }}">
