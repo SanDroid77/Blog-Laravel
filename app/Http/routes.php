@@ -11,14 +11,20 @@
 |
 */
 
-Route::get('/', ['as' => 'admin.index', function () {
-    return view('welcome');
-}]);
+// RUTAS DEL FRONTEND
+
+Route::get('/', [
+	'uses'	=>	'FrontController@index',
+	'as'	=>	'front.index'
+]);
+
+
+// RUTAS DEL PANEL DE ADMINISTRACIÓN
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 
 	Route::get('/', ['as' => 'admin.index', function(){
-		return view('welcome');
+		return view('admin.index');
 	}]);
 
 	Route::resource('users', 'UsersController');
