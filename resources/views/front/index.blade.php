@@ -42,18 +42,14 @@
 				</div>
 				<div class="panel-body">
 					<ul class="list-group">
+						@foreach($categories as $category)
+
 						<li class="list-group-item">
-							<span class="badge">14</span>
-							Noticias
+							<span class="badge">{{ $category->articles->count() }}</span>
+							{{ $category->name }}
 						</li>
-						<li class="list-group-item">
-							<span class="badge">2</span>
-							Programación
-						</li>
-						<li class="list-group-item">
-							<span class="badge">1</span>
-							Tips
-						</li>
+
+						@endforeach
 					</ul>
 				</div>
 			</div>
@@ -65,14 +61,11 @@
 					<h3 class="panel-title">Tags</h3>
 				</div>
 				<div class="panel-body">
-					<span class="label label-default">Symfony</span>
-					<span class="label label-default">CodeIgniter</span>
-					<span class="label label-default">Rails</span>
-					<span class="label label-default">Laravel</span>
-					<span class="label label-default">PHP</span>
-					<span class="label label-default">CodigoFacilito</span>
-					<span class="label label-default">Default</span>
-					<span class="label label-default">Default</span>
+					@foreach($tags as $tag)
+
+					<span class="label label-default">{{ $tag->name }}</span>
+
+					@endforeach
 				</div>
 			</div>
 		</div>

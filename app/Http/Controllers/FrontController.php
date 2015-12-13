@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Article;
+use App\Category;
+use App\Tag;
 use Carbon\Carbon;
 
 class FrontController extends Controller
@@ -25,7 +27,16 @@ class FrontController extends Controller
             $articles->images;
         });
 
+        $categories = Category::orderBy('id', 'DESC')->get();
+        $categories->each(function($categories){
+           $categories->articles; 
+        });
+
+        $tags = Tag::orderBy('name', 'DESC')->get();
+
         return view('front.index')
-            ->with('articles', $articles);
+            ->with('articles', $articles)
+            ->with('categories', $categories)
+            ->with('tags', $tags);
     }
 }
