@@ -36,45 +36,7 @@
 		</div>
 
 		<div class="col-md-4 aside">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title">Categorías</h3>
-				</div>
-				<div class="panel-body">
-					<ul class="list-group">
-						<li class="list-group-item">
-							<span class="badge">14</span>
-							Noticias
-						</li>
-						<li class="list-group-item">
-							<span class="badge">2</span>
-							Programación
-						</li>
-						<li class="list-group-item">
-							<span class="badge">1</span>
-							Tips
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4 aside">
-			<div class="panel panel-danger">
-				<div class="panel-heading">
-					<h3 class="panel-title">Tags</h3>
-				</div>
-				<div class="panel-body">
-					<span class="label label-default">Symfony</span>
-					<span class="label label-default">CodeIgniter</span>
-					<span class="label label-default">Rails</span>
-					<span class="label label-default">Laravel</span>
-					<span class="label label-default">PHP</span>
-					<span class="label label-default">CodigoFacilito</span>
-					<span class="label label-default">Default</span>
-					<span class="label label-default">Default</span>
-				</div>
-			</div>
+			@include('front.partials.aside')
 		</div>
 	</div>
 
