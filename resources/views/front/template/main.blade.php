@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>@yield('title', 'Home') | Blog Facilito</title>
+	<title>@yield('title', 'Home') | Blog SanDroid</title>
 	<link rel="stylesheet" href="{{ asset('plugins/bootstrap/themes/Flaty/bootstrap.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/general.css') }}">
 	<link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}">

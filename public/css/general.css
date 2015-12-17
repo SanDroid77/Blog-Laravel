@@ -7,3 +7,7 @@ body {
 	background-image: url('../images/patterns/old_moon.png');
 	background-repeat: repeat;
 }
+
+.fondo-articulo {
+	background-color: #FFFFFF;
+}
