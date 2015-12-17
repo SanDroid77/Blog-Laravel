@@ -28,4 +28,9 @@ class Tag extends Model
     {
         return $query->paginate(5);
     }
+
+    public function scopeSearchTag($query, $name)
+    {
+        return $query->where('name', '=', $name);
+    }
 }

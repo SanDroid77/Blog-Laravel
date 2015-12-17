@@ -23,4 +23,9 @@ class Category extends Model
     {
         return $query->paginate(5);
     }
+
+    public function scopeSearchCategory($query, $name)
+    {
+        return $query->where('name', '=', $name);
+    }
 }
