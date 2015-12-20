@@ -27,4 +27,3 @@
 
 	<script src="{{ asset('plugins/jquery/js/jquery-2.1.4.js') }}"></script>
 </body>
-</html>

@@ -19,7 +19,9 @@
       @if(Auth::user())
         <ul class="nav navbar-nav">
           <li><a href="#">Inicio</a></li>
-          <li><a href="{{ route('admin.users.index') }}">Usuarios</a></li>
+          @if(Auth::user()->admin())
+            <li><a href="{{ route('admin.users.index') }}">Usuarios</a></li>
+          @endif
           <li><a href="{{ route('admin.categories.index') }}">Categorías</a></li>
           <li><a href="{{ route('admin.articles.index') }}">Artículos</a></li>
           <li><a href="{{ route('admin.images.index') }}">Imágenes</a></li>

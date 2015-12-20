@@ -51,4 +51,9 @@ class User extends Model implements AuthenticatableContract,
     {
         return $query->paginate(5);
     }
+
+    public function admin()
+    {
+        return $this->type === 'admin';
+    }
 }
