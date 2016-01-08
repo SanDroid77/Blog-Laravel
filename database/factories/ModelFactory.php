@@ -18,7 +18,7 @@ $factory->define(User::class, function (Generator $faker) {
     $array = [
     	'name'		=>	$faker->name,
     	'email'		=>	$faker->email,
-    	'password'	=>	bcrypt('carlos')
+    	'password'	=>	bcrypt('sandro')
     ];
 
     return $array;
