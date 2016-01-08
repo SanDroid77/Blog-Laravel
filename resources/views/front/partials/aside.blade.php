@@ -1,7 +1,7 @@
 
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3 class="panel-title">Categorías</h3>
+					<h3 class="panel-title">{{ trans('app.title_categories') }}</h3>
 				</div>
 				<div class="panel-body">
 					<ul class="list-group">
