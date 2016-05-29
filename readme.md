@@ -1,9 +1,3 @@
-# Blog en Laravel 5
-
-Hola a todos! Soy SanDroid y estoy presentando mi primer proyecto web, el cual consiste en un blog usando el espectacular framework basado en PHP, [Laravel](http://laravel.com), en su versión 5 y [Bootstrap](http://getbootstrap.com) para el diseño y front-end. Este proyecto se hace gracias a un completo curso dictado por Carlos Fernandes (su Twitter es [twitter.com/_bycar](https://twitter.com/_bycar)) en la plataforma [Código Facilito](http://codigofacilito.com).
-El sitio todavía está en construcción, y solo se puede acceder si se tiene usuario registrado. Para solicitarlo, consulte al administrador, o sea a mí :v
-
-
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
